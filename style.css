@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/* header */
+
+header {
+  background-color: blue;
+  color: whitesmoke;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1,
+span {
+  margin-left: 2rem;
+}
+
+span {
+  color: lightseagreen;
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  margin-left: 1rem;
+}
+
+a:hover {
+  color: lightseagreen;
+  cursor: pointer;
+}
+
+/* section */
+
+.container {
+  /* background-color: pink; */
+  font-size: 0.75rem;
+  padding: 1.5rem;
+  color: blue;
+}
+
+/* h2,
+h3,
+p,
+.button-1,
+.button-2,
+img {
+  margin-left: 2rem;
+} */
+
+.container {
+  margin-left: 2rem;
+}
+
+img {
+  /* display: block;
+  width: 80%;
+  margin: 20px auto; */
+  width: 90%;
+  height: 400px;
+}
+
+h3,
+p,
+img {
+  margin-top: 1rem;
+}
+
+p {
+  max-width: 90%;
+  line-height: 1.5;
+}
+
+button {
+  margin-top: 0.5rem;
+}
+
+.button-1 {
+  background-color: blue;
+}
+
+.button-2 {
+  margin-left: 0.15rem;
+
+  background-color: lightseagreen;
+}
+
+button {
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 500px) {
+  span,
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  span,
+  li {
+    margin-top: 1rem;
+  }
+
+  li:not(:last-child) {
+    border-bottom: 1px dotted white;
+  }
+
+  button {
+    /* display: block;
+    text-align: center;
+    
+    padding: 2rem; */
+    display: block;
+    /* width: 100%; */
+    border: none;
+    background-color: #04aa6d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    width: 90%;
+  }
+}
